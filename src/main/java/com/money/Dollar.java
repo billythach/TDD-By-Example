@@ -11,10 +11,4 @@ public class Dollar extends Money {
         return new Dollar(this.amount * i);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        Money money = (Money) o;
-        return amount == money.amount;
-    }
-
 }
