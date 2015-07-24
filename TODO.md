@@ -4,5 +4,7 @@
 - Make "amount" private
 - ~~Dollar side effect~~
 - Money rounding
-- **equals()**
+- ~~equals()~~
 - hashcode()
+- Equal null
+- Equal object
