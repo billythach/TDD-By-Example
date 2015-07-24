@@ -9,7 +9,8 @@ public class Dollar {
 
     }
 
-    public void times(int i) {
+    public Dollar times(int i) {
         this.amount = amount * i;
+        return null;
     }
 }
