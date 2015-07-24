@@ -2,7 +2,7 @@ package com.money;
 
 public class Dollar {
 
-    public Object amount;
+    public int amount = 10;
 
     public Dollar(int i) {
 
