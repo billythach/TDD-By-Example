@@ -1,8 +1,6 @@
 package com.money;
 
-public class Franc {
-
-    private int amount;
+public class Franc extends Money {
 
     public Franc(int amount) {
         this.amount = amount;
@@ -11,12 +9,6 @@ public class Franc {
 
     public Franc times(int i) {
         return new Franc(this.amount * i);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        Franc franc = (Franc) o;
-        return amount == franc.amount;
     }
 
 }
