@@ -11,7 +11,6 @@ public class DollarTest {
         Dollar five= new Dollar(5);
         five.times(2);
         assertThat(five.amount).isEqualTo(10);
-        assertThat(true).isEqualTo(false);
     }
 
 }
