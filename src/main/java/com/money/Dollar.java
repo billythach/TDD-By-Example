@@ -2,13 +2,14 @@ package com.money;
 
 public class Dollar {
 
-    public int amount = 10;
+    int amount;
 
-    public Dollar(int i) {
+    public Dollar(int amount) {
+        this.amount = amount;
 
     }
 
     public void times(int i) {
-
+        this.amount = amount * i;
     }
 }
