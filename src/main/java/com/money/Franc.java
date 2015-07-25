@@ -10,9 +10,4 @@ public class Franc extends Money {
         return Money.franc(this.amount * i);
     }
 
-    @Override
-    String currency() {
-        return currency;
-    }
-
 }
