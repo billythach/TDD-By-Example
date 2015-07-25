@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class DollarTest {
 
     public void testMultiplication() {
-        Dollar five = new Dollar(5);
+        Dollar five = Money.dollar(5);
         assertThat(five.times(2)).isEqualTo(new Dollar(10));
         assertThat(five.times(3)).isEqualTo(new Dollar(15));
     }
