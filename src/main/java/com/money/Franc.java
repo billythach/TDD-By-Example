@@ -12,7 +12,7 @@ public class Franc extends Money {
 
     @Override
     String currency() {
-        return null;
+        return "CHF";
     }
 
 }
