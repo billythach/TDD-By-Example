@@ -15,4 +15,8 @@ public class MoneyTest {
         assertThat(Money.franc(5)).isNotEqualTo(Money.dollar(5));
     }
 
+    public void testCurrency() {
+        assertThat(Money.dollar(1).currency()).isEqualTo("USD");
+        assertThat(Money.franc(1).currency()).isEqualTo("CHF");
+    }
 }
