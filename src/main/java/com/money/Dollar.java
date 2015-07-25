@@ -12,7 +12,7 @@ public class Dollar extends Money {
 
     @Override
     String currency() {
-        return null;
+        return "USD";
     }
 
 }
