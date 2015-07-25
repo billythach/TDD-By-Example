@@ -2,8 +2,6 @@ package com.money;
 
 public class Dollar extends Money {
 
-    private String currency;
-
     public Dollar(int amount) {
         this.amount = amount;
         this.currency = "USD";
