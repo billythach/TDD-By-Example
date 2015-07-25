@@ -8,6 +8,10 @@ public abstract class Money {
         return new Dollar(amount);
     }
 
+    static Money franc(int amount) {
+        return new Franc(amount);
+    }
+
     abstract Money times(int times);
 
     @Override
