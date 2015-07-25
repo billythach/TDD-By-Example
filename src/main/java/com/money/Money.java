@@ -1,12 +1,14 @@
 package com.money;
 
-public class Money {
+public abstract class Money {
 
     protected int amount;
 
     static Dollar dollar(int amount) {
         return new Dollar(amount);
     }
+
+    abstract Money times(int times);
 
     @Override
     public boolean equals(Object o) {
