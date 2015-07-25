@@ -18,8 +18,12 @@ public abstract class Money {
         return new Franc(amount, "CHF");
     }
 
+    String currency() {
+        return currency;
+    }
+
     abstract Money times(int times);
-    abstract String currency();
+
 
     @Override
     public boolean equals(Object o) {
