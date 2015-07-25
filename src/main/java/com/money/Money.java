@@ -1,6 +1,6 @@
 package com.money;
 
-public abstract class Money {
+public class Money {
 
     protected int amount;
     protected String currency;
@@ -22,7 +22,9 @@ public abstract class Money {
         return currency;
     }
 
-    abstract Money times(int times);
+    Money times(int times) {
+        return null;
+    }
 
 
     @Override
