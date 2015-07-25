@@ -4,7 +4,7 @@ public abstract class Money {
 
     protected int amount;
 
-    static Dollar dollar(int amount) {
+    static Money dollar(int amount) {
         return new Dollar(amount);
     }
 
