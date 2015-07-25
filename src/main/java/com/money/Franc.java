@@ -7,7 +7,7 @@ public class Franc extends Money {
 
     }
 
-    public Franc times(int i) {
+    public Money times(int i) {
         return new Franc(this.amount * i);
     }
 
