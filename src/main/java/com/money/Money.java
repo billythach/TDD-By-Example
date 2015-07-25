@@ -22,10 +22,9 @@ public class Money {
         return currency;
     }
 
-    Money times(int times) {
-        return null;
+    Money times(int i) {
+        return new Money(this.amount * i, this.currency);
     }
-
 
     @Override
     public boolean equals(Object o) {
