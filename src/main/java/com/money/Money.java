@@ -26,6 +26,10 @@ public class Money {
         return new Money(this.amount * i, this.currency);
     }
 
+    public Money plus(Money money) {
+        return null;
+    }
+
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
