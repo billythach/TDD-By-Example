@@ -1,6 +1,6 @@
 package com.money;
 
-public class Money {
+public class Money implements Expression {
 
     protected int amount;
     protected String currency;
@@ -36,4 +36,11 @@ public class Money {
         return amount == money.amount && currency.equals(money.currency);
     }
 
+    @Override
+    public String toString() {
+        return "Money{" +
+                "amount=" + amount +
+                ", currency='" + currency + '\'' +
+                '}';
+    }
 }
