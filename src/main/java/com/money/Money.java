@@ -27,7 +27,7 @@ public class Money {
     }
 
     public Money plus(Money money) {
-        return null;
+        return new Money(amount + money.amount, currency);
     }
 
     @Override
