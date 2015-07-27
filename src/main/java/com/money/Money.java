@@ -52,6 +52,6 @@ public class Money implements Expression {
 
     @Override
     public Expression plus(Expression expression) {
-        return new Money(10, "USD");
+        return new Sum(this, expression);
     }
 }
