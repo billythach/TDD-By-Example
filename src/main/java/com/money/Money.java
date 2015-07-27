@@ -43,4 +43,9 @@ public class Money implements Expression {
                 ", currency='" + currency + '\'' +
                 '}';
     }
+
+    @Override
+    public Money reduce(String to) {
+        return this;
+    }
 }
