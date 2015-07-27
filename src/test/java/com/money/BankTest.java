@@ -20,4 +20,11 @@ public class BankTest {
         assertThat(result).isEqualTo(Money.dollar(1));
     }
 
+    public void testReduceMoneyDifferentCurrency() {
+        Bank bank= new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result= bank.reduce(Money.franc(2), "USD");
+        assertThat(result).isEqualTo(Money.dollar(1));
+    }
+
 }
