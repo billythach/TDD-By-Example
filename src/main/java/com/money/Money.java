@@ -22,12 +22,13 @@ public class Money implements Expression {
         return currency;
     }
 
-    Money times(int i) {
-        return new Money(this.amount * i, this.currency);
-    }
-
     public Expression plus(Money money) {
         return new Sum(this, money);
+    }
+
+    @Override
+    public Expression times(int mutiplier) {
+        return new Money(this.amount * mutiplier, this.currency);
     }
 
     @Override

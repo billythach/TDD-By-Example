@@ -18,4 +18,9 @@ public class Sum implements Expression {
     public Expression plus(Expression expression) {
         return new Sum(this, expression);
     }
+
+    @Override
+    public Expression times(int mutiplier) {
+        return null;
+    }
 }
