@@ -6,4 +6,7 @@ public class Bank {
         return expression.reduce(to);
     }
 
+    public void addRate(String from, String to, int i) {
+
+    }
 }
