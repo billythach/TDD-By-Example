@@ -5,5 +5,5 @@
 - ~~Bank.reduce(Money)~~
 - ~~Reduce with Money conversion~~
 - ~~Reduce(Bank, String)~~
-- Sum.plus
+- *Sum.plus*
 - Expression.times
