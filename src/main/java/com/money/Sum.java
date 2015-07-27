@@ -21,6 +21,6 @@ public class Sum implements Expression {
 
     @Override
     public Expression times(int mutiplier) {
-        return null;
+        return new Sum(this.augend.times(mutiplier), this.addend.times(mutiplier));
     }
 }
