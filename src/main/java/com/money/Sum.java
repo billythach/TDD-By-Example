@@ -13,4 +13,9 @@ public class Sum implements Expression {
         int amount = this.augend.amount + this.addend.amount;
         return new Money(amount, to);
     }
+
+    @Override
+    public Expression plus(Expression expression) {
+        return null;
+    }
 }
