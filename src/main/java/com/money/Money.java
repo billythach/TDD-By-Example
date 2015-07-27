@@ -26,8 +26,8 @@ public class Money implements Expression {
         return new Money(this.amount * i, this.currency);
     }
 
-    public Money plus(Money money) {
-        return new Money(amount + money.amount, currency);
+    public Expression plus(Money money) {
+        return new Sum(this, money);
     }
 
     @Override
